@@ -8,6 +8,6 @@ export class AuthController {
   constructor(private readonly authService: AuthService) { }
   @Post('login')
   login(@Body() loginDto: LoginDto) {
-    this.authService.login(loginDto);
+    return this.authService.login(loginDto);
   }
 }
