@@ -1,5 +1,6 @@
 db.sqlite
 db.sqlite3
+uploads
 
 # compiled output
 /dist
