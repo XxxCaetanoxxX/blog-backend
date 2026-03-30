@@ -31,6 +31,6 @@ export class Post {
     @UpdateDateColumn()
     updatedAt: Date;
 
-    @ManyToOne(() => User)
+    @ManyToOne(() => User, {onDelete: 'CASCADE'})
     author: User
 }
